@@ -1,0 +1,564 @@
+/* VRAGEN AAN LAURA:
+SCHALEN H1 H2 H3 DOET RAAR
+TITEL VERBERGEN EN TERUGBRENGEN MOBIEL EN LAPTOP
+ALLE KOLLOMMEN WEG TITELS VERANDEREN
+
+*/
+
+/*body styling*/
+
+/* navigation styling*/
+
+header {
+    margin-bottom: 2em;
+
+}
+
+nav {
+    display: flex;
+    border-bottom: 1px solid #b8b8b8;
+    box-shadow: #a2a2a2;
+
+}
+
+
+nav img {
+    width: 4rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: darkblue;
+}
+
+nav ul li a:active {
+    color: darkblue;
+}
+
+
+/* recipe overview styling */
+
+/*figcaption {
+  font-size:1.5em;
+  line-height:1.25em;
+  padding:.675em; /* For MS Edge en co 
+  padding-block:.5em;
+  padding-inline:.75em;
+  font-weight:bold;
+  color:#fff;
+  background-color:rgba(255,0,128,1); color for Naomi 
+  opacity:.875;
+  position: absolute;
+  top: 0;
+  left: 0;
+  */
+
+/* overschrijf standaard stijling van een figure element*/
+
+.recepten {
+    opacity: 0.7;
+    background-repeat: space;
+    min-width: 100%;
+}
+
+figure {
+    margin: 0 1.5em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+/*voorgerechten*/
+
+.carpaccio {
+    background-image: url("../images/carpaccio1.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.tomatensoep {
+    background-image: url("../images/tomatensoep.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.zalmwrapjes {
+    background-image: url("../images/zalmwrapjes2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.tartaarmango {
+    background-image: url("../images/tartaarmango2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.kipcocktail {
+    background-image: url("../images/kipcocktail2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.couscous {
+    background-image: url("../images/couscous2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.zalmsushi {
+    background-image: url("../images/zalmwrapjes2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+/* hoofdgerechten*/
+
+.stoofschotel {
+    background-image: url("../images/stoofschotel12.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.paddenstoelen {
+    background-image: url("../images/paddenstoelen2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.spaghetti {
+    background-image: url("../images/spaghetti2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.curryspruitjes {
+    background-image: url("../images/curryspruitjes2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.wrapsgehakt {
+    background-image: url("../images/wrapsgehakt.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.ratatouille {
+    background-image: url("../images/ratatouille2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.pizzafalafel {
+    background-image: url("../images/pizzafalafel2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*vanaf hier al af
+nagerechten*/
+
+.appeltaart {
+    background-image: url("../images/appeltaart.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.chocoladetaart {
+    background-image: url("../images/chocoladetaart2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.kersenvlaai {
+    background-image: url("../images/kersenvlaai.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.kersenvlaai {
+    background-image: url("../images/kersenvlaai2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.mokkataart {
+    background-image: url("../images/mokkataart2.jpeg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.slagroomtaart {
+    background-image: url("../images/slagroomtaart.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.gevuldeappels {
+    background-image: url("../images/gevuldeappels2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+.ijskoffie {
+    background-image: url("../images/ijskoffie2.jpg");
+    background-repeat: space;
+    min-width: 100%;
+}
+
+
+
+
+/*main content styling*/
+
+.main {
+    display: grid;
+    grid-gap: 1em;
+    justify-content: space-around;
+}
+
+.overzicht {
+    border: 1em solid #b8b8b8;
+    display: block;
+    width: 95vw;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+
+
+h2 {
+    background-color: beige;
+    font-size: 2em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+.desktopTitel {
+    display: none;
+}
+
+.voorgerechtenTitel {
+    display: block;
+}
+
+h3 {
+    color: black;
+    display: flex;
+    font-size: 1.5em;
+    margin-left: 0.8em;
+}
+
+p {
+    color: black;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin: 1em;
+    min-height: inherit;
+}
+
+
+
+
+.hidden {
+    display: none;
+}
+
+
+
+
+/*stijling voor detail pagina*/
+
+q {
+    display: block;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 1.4em;
+}
+
+
+.carpacciofoto {
+    text-align: center;
+    max-width: 80%;
+    margin: 3em;
+}
+
+
+.titelcarpaccio {
+    text-align: center;
+}
+
+.ingredienten {
+    font-size: 0.9em;
+    margin: 2em;
+
+}
+
+.carpaccioheader2 {
+    opacity: 0.8;
+    max-width: 99%;
+    margin: 0.8em;
+}
+
+
+
+
+/*css voor aanmeld pagina*/
+
+body{
+    background-color:floralwhite;
+}
+
+
+.websitehead {
+    width: 100%;
+    height: 15em;
+}
+
+
+form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    min-height: 1.2em;
+    font-size: 1.2em;
+}
+
+form label {
+    font-size: 1.5em;
+}
+
+button {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.3em;
+    max-height: 5em;
+    max-width: 10em;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 4px;
+}
+
+
+.facebook {
+    min-width: 60%;
+    margin-left: 3em;
+}
+
+/*hier probeer ik de pop-up te maken, deze
+laat ik ook verdwijnen door de display none
+met een functie in de JS, heb de hele pop-up 
+gemaakt, hiervan een foto in het document, 
+krijg het niet voor elkaar deze weer tevoorschijn
+te halen, wel geprobeerd.*/
+
+.randzwart{
+    width:100%;
+    height:100% ;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.randwit{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 50px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+
+/*media querie voor desktop, viewport vanaf 60em */
+
+@media only screen and (min-width: 60em) {
+
+    /*als de website op een groot scherm bekeken word, worden de recepten in 3 rijen getoond*/
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: flex-end
+    }
+
+    nav ul li {
+        margin-left: 2em;
+    }
+
+    nav ul li {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        max-width: 30vw;
+        text-align: center;
+
+    }
+
+    .desktopTitel {
+        display: block;
+    }
+
+    .voorgerechtenTitel {
+        display: none;
+    }
+
+    .hoofdgerechtenTitel {
+        display: none;
+    }
+
+    .nagerechtenTitel {
+        display: none;
+    }
+
+
+
+    main section {
+        border: 5px solid #527821;
+        margin: 0 20px
+    }
+
+    .voorgerechten,
+    .hoofdgerechten,
+    .nagerechten {
+        border: 0;
+    }
+
+
+
+
+    /*detail pagina*/
+    q {
+        display: block;
+        text-align: center;
+        font-family: fantasy;
+        font-size: 1.8em;
+    }
+
+
+    .carpacciofoto {
+        text-align: center;
+        max-width: 80%;
+        margin-left: 30em;
+    }
+
+
+    .titelcarpaccio {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .ingredienten {
+        text-align: center;
+        font-size: 1.4em;
+        margin: 2em;
+
+    }
+
+    .carpaccioheader2 {
+        opacity: 0.8;
+        max-width: 99%;
+        margin: 0.8em;
+    }
+
+    .bereiding {
+        text-align: center;
+        max-width: 30em;
+        margin-left: 35em;
+    }
+
+
+
+
+
+
+    /*aanmelden pagina*/
+    .websitehead {
+        width: 99%;
+        height: 40em;
+    }
+
+
+    form {
+        margin-left: 45em;
+        display: inline-block;
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        display: inline-block;
+        max-width: 50%;
+        min-height: 1.8em;
+        font-size: 1.8em;
+    }
+
+    form label {
+        display: inline-block;
+        font-size: 2.1em;
+    }
+
+    button {
+        display: inline-block;
+        text-align: center;
+        margin-top: 1em;
+        font-size: 2em;
+        max-height: 5em;
+        max-width: 10em;
+        background-color: darkcyan;
+        color: white;
+    }
+
+
+
+}
